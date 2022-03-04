@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #17181a;
+    font-size: 1.7rem;
+    overflow-x: hidden;
+}
+
+#logo {
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.nav-header {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    position: sticky;
+    top: 0%;
+    z-index: 3;
+}
+
+.line1, .line2 {
+    width: 3.8rem;
+    height: 0.25rem;
+    background: white;
+    margin: 0.7rem;
+    pointer-events: none;
+}
+
+.slide {
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.hero-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-basis: 28rem;
+    flex-wrap: wrap;
+    padding-left: 5rem;
+    position: relative;
+}
+
+.hero-img {
+    flex: 1;
+    flex-basis: 28rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mountain-span {
+    color: rgb(86, 124, 228);
+}
+
+.hike-span {
+    color: rgb(255, 139, 93);
+}
+
+.fashion-span {
+    color: rgb(167, 110, 231);
+}
+
+.hero-desc h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 6.5rem;
+}
+
+.hero-desc p {
+    font-size: 1.8rem;
+    padding: 3.8rem 0rem;
+}
+
+.explore {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.4rem;
+    border: none;
+    background: none;
+    color: rgb(226, 226, 226);
+    border: 1px solid white;
+    align-self: flex-start;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    opacity: 1;
+    clip-path: circle(50px at 100% -10%);
+    -webkit-clip-path: circle(50px at 100% -10%);
+    flex-wrap: wrap;
+}
+
+.ham-burger {
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.nav-links {
+    list-style: none;
+    font-size: 4rem;
+    /* flex: 1 1 35rem; */
+    flex-basis: 30rem;
+}
+
+.nav-links h3 {
+    font-weight: 800;
+    padding: 3rem;
+    text-align: justify;
+}
+
+.contact {
+    /* flex: 1 1 35rem; */
+    flex-basis: 54rem;
+    padding-right: 2rem;
+}
+
+.contact h2 {
+    padding: 3rem;
+    font-size: 4rem;
+    font-weight: 900;
+    padding: 1rem 0rem;
+}
+
+.contact p {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 100;
+}
+
+.reveal-img, .reveal-text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 102%;
+    top: -2%;
+    background-color: #17181a;
+}
+
+.cursor {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    transition-property: background, transform;
+    transform-origin: 75% 75%;
+}
+
+.cursor.nav-active {
+    background: rgb(86, 124, 228);
+    transform: scale(3);
+}
+
+.cursor.exp-active {
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background: white;
+    color: black;
+    transform: scale(3);
+}
+.title{
+    position: relative;
+    overflow: hidden;
+    background-color: #17181a;
+}
+.title-swipe{
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode:darken;
+    transform: translateY(-100%);
+}
+.t-swipe1{
+    background-color: rgb(86, 124, 228);
+}
+.t-swipe2{
+    background-color: rgb(255, 139, 93);
+}
+.t-swipe3{
+    background-color: rgb(167, 110, 231);
+}
+.scrollmagic-pin-spacer {
+    position: static !important;
+}
+body.hide{
+    overflow: hidden;
+}
