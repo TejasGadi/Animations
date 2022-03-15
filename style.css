@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 80%;
+}
 body {
   background: #17181a;
   font-family: "Montserrat", sans-serif;
