@@ -1,3 +1,3 @@
 # Travel and Fashion website
 <br>
-Link:https://tejasgadi.github.io/Animations/
+Link:https://tejasgadi.github.io/Travel-and-Fashion/
